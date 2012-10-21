@@ -1,0 +1,117 @@
+2002-07-31 09:11  nickjc
+
+	* icounter.pl (1.15): * fixed taint problem on sysopen under Perl
+	5.8
+
+2002-07-23 22:00  nickjc
+
+	* icounter.pl (1.14): * changed caller(1) to caller(0), preventing
+	an undef warning if the error	page is triggered outside a sub
+
+2002-07-23 21:44  nickjc
+
+	* icounter.pl (1.13): * changed $main::DEBUGGING to $DEBUGGING,
+	since the assumption that we're   in package main is invalid under
+	mod_perl
+
+2002-05-01 09:09  gellyfish
+
+	* icounter.pl (1.12): * Added locale stuff to all files that use
+	strftime * Fixed typo in formmail/EXAMPLES * Hand fixed
+	formmail/README.xml
+
+2002-04-23 12:51  gellyfish
+
+	* README.xml (1.1): Generated XML Files from READMEs
+
+2002-03-27 20:36  davorg
+
+	* icounter.pl (1.11): Removed log tags from all programs - replaced
+	by an auto-generated ChangeLog file.
+
+2002-03-27 20:30  davorg
+
+	* MANIFEST (1.2): Added ChangeLog file to MANIFESTs
+
+2002-03-05 21:10  gellyfish
+
+	* README (1.5), digits/0.png (1.1), digits/1.png (1.1),
+	digits/2.png (1.1), digits/3.png (1.1), digits/4.png (1.1),
+	digits/5.png (1.1), digits/6.png (1.1), digits/7.png (1.1),
+	digits/8.png (1.1), digits/9.png (1.1): * Added PNG versions of the
+	digits
+
+2002-02-27 09:04  gellyfish
+
+	* icounter.pl (1.10): * Added question about simple search and PDF
+	to FAQ * Suppressed output of headers in fatalsToBrowser if
+	$done_headers * Suppressed output of '<link rel...' if not $style *
+	DOCTYPE in fatalsToBrowser * moved redirects until after possible
+	cause of failure * some small XHTML fixes
+
+2002-02-26 08:59  gellyfish
+
+	* README (1.4), icounter.pl (1.9): * Fixed imagecounter to
+	something * fixed typo in textcounter/README * suppressed emission
+	of headers in fatalsToBrowser if already done.
+
+2002-02-14 10:46  gellyfish
+
+	* icounter.pl (1.8): * Realized that it didn't do anything
+
+2002-01-27 17:46  davorg
+
+	* README (1.3): Removed all of Matt's docs
+
+2001-12-01 19:45  gellyfish
+
+	* icounter.pl (1.7): * Tested everything with 5.004.04 * Replaced
+	the CGI::Carp with local variant
+
+2001-11-26 19:36  davorg
+
+	* MANIFEST (1.1): Added MANIFEST file to all packages.
+
+2001-11-26 13:40  nickjc
+
+	* icounter.pl (1.6): Added \Q \E around variables in regexps where
+	metacharacters in the variables shouldn't be interpreted by the
+	regex engine.
+
+2001-11-25 11:39  gellyfish
+
+	* icounter.pl (1.5): * add missing use vars qw($DEBUGGING) from
+	most of the files * sundry other compilation failures
+
+2001-11-14 22:21  davorg
+
+	* README (1.2): Changed script archive URL to Sourceforge.  Added
+	link to support mailing list.
+
+2001-11-13 20:35  gellyfish
+
+	* icounter.pl (1.4): Added the CGI::Carp workaround
+
+2001-11-13 09:15  gellyfish
+
+	* icounter.pl (1.3): Added CGI::Carp
+
+2001-11-11 17:55  davorg
+
+	* icounter.pl (1.2): Small amount of post-import tidying :)
+
+2001-11-11 16:48  davorg
+
+	* README (1.1), icounter.pl (1.1), digits/0.gif (1.1), digits/1.gif
+	(1.1), digits/2.gif (1.1), digits/3.gif (1.1), digits/4.gif (1.1),
+	digits/5.gif (1.1), digits/6.gif (1.1), digits/7.gif (1.1),
+	digits/8.gif (1.1), digits/9.gif (1.1): Initial revision
+
+2001-11-11 16:48  davorg
+
+	* README (1.1.1.1), icounter.pl (1.1.1.1), digits/0.gif (1.1.1.1),
+	digits/1.gif (1.1.1.1), digits/2.gif (1.1.1.1), digits/3.gif
+	(1.1.1.1), digits/4.gif (1.1.1.1), digits/5.gif (1.1.1.1),
+	digits/6.gif (1.1.1.1), digits/7.gif (1.1.1.1), digits/8.gif
+	(1.1.1.1), digits/9.gif (1.1.1.1): Initial import
+
